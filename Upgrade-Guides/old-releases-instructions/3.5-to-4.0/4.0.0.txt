@@ -1,0 +1,24 @@
+--------------------------------------------------------------------
+Update Guide for WhatsJet 4 from 3.5
+--------------------------------------------------------------------
+
+WARNING!!! PLEASE NOTE: This upgrade guide won't not work if you have done any customizations etc.
+in such case its advisable that DO NOT UPGRADE on existing installation instead start new. after that you may apply your changes.
+
+1) Please backup all your files as well as database for precautions.
+
+2- A) Run/Import 4.0.0-db-upgrade.sql file on your database using tools PhpMyAdmin etc
+
+2 - B) Delete/Replace all the folders & files except below (DO NOT REPLACE BELOW MENTIONED FILES/FOLDERS):
+    a) .env
+    b) public/media-storage
+    c) locale - (As you may updated the language translations)
+
+3) Replace/Add all other files from the downloaded zip's Source folder (except above mentioned files & folders.)
+
+4) Once done!!
+
+5) Run, if you got and errors enable the debug mode from .env file to see any errors so you can fix the same.
+
+Thank you
+team livelyworks

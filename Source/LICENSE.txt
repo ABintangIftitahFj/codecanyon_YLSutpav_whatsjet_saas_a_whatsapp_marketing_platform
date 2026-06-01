@@ -1,0 +1,22 @@
+WhatsJet
+Copyright © 2024 - 2026 livelyworks
+All rights reserved.
+
+This product is licensed under the Envato Market Regular or Extended License.
+
+You are allowed to:
+- Use this software in one single End Product (Regular or Extended, depending on license).
+- Modify the source code for personal or client use.
+- Integrate this into commercial projects for a single client (based on license).
+
+You are NOT allowed to:
+- Resell, sublicense, redistribute, or share this software.
+- Use the same license for multiple clients or projects.
+- Remove the copyright notices.
+
+To view full license terms, visit: https://codecanyon.net/licenses/standard
+
+Support & Contact:
+Email: contact@livelyworks.net
+Website: https://livelyworks.net
+Product Purchase Link : https://codecanyon.net/item/whatsjet-saas-a-whatsapp-marketing-platform-with-bulk-sending-campaigns-chat-bots/51167362

@@ -1,0 +1,35 @@
+--------------------------------------------------------------------
+Update Guide for WhatsJet 6.0 from 5.5
+--------------------------------------------------------------------
+
+WARNING!!! PLEASE NOTE: This upgrade guide won't not work if you have done any customizations/changes etc anywhere in the code.
+in such case its advisable that DO NOT UPGRADE on existing installation instead start new. after that you may apply your changes.
+
+PHP Requirements has been changed in this release now you need to have PHP 8.2+
+
+1)  a) Please backup all your files and folders as well as database for precautions.
+    b) Go to license menu and check your existing version
+    c) Keep your purchase code ready you may need to reactivate your license
+    b) Delete following files
+        i) bootstrap/cache/services.php
+        ii) bootstrap/cache/packages.php
+
+2- A) Run/Import 6.0-upgrade.sql file on your database using tools PhpMyAdmin etc
+
+2 - B) Delete/Replace all the folders & files except below (DO NOT REPLACE BELOW MENTIONED FILES/FOLDERS):
+    a) .env
+    b) public/media-storage
+    c) locale - (As you may updated the language translations)
+
+3) Replace/Add all other files from the downloaded zip's Source folder (except above mentioned files & folders.)
+
+4) Once done!!
+
+5) Run, if you got an errors enable the debug mode from .env file to see the exact errors so it can be fix.
+
+6) Go to misc settings from superadmin and clear optimizations
+
+7) By Default Webhook handling has been set to DB that needs to have proper setup of Cron Job / Queue Worker you can set it to Sync option as before. But for the Performance point of use DB option is much better.
+
+Thank you
+team livelyworks

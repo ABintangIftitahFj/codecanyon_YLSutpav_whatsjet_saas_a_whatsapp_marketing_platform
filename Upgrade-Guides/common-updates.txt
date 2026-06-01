@@ -1,0 +1,28 @@
+--------------------------------------------------------------------
+Update Guide for WhatsJet
+--------------------------------------------------------------------
+
+WARNING!!! PLEASE NOTE: This upgrade guide won't not work if you have done any customizations etc.
+in such case its advisable that DO NOT UPGRADE on existing installation instead start new. after that you may apply your changes.
+
+1)
+    a) Please backup all your files as well as database for precautions.
+    b) Delete existing cache etc especially bootstrap/cache all files except .gitignore
+    c) Check change-log.txt for changed files/folders
+
+2) Delete/Replace all the folders & files except below OR as per change-log.txt:
+    a) .env
+    b) public/media-storage
+    c) locale - (As you may updated the language translations)
+
+3) Replace/Add all other files from the downloaded zip's Source folder (except above mentioned files & folders.)
+    NOTE: Instead replacing all the files you can see the change log for changed files and folders which only can be replaced.
+
+4) Once done!!
+
+5) Run, if you got and errors enable the debug mode from .env file to see any errors so you can fix the same.
+
+6) If you are using Queue Worker you may need to restart it
+
+Thank you
+team livelyworks

@@ -1,0 +1,903 @@
+WhatsJet
+-----------------------------------------------------------------------------------------------------------
+PLEASE NOTE:: Please take your existing files backup before update, once you replace all the files (except .env, media-storage etc), update the changed files by yourself.
+============================================================================================================
+--------------------------------------------------------------------------------
+RELEASE #7.2.5 - 22 APR 2026
+--------------------------------------------------------------------------------
+🐞🛠️💪 - Improvements and Fixes
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+Recommended to update all the files and folders as suggested in upgrade guide
+
+--------------------------------------------------------------------------------
+RELEASE #7.2.0 - 09 APR 2026
+--------------------------------------------------------------------------------
+🐞🛠️💪 - Improvements and Fixes
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+Recommended to update all the files and folders as suggested in upgrade guide
+
+RELEASE #7.1.5 - 06 APR 2026
+--------------------------------------------------------------------------------
+💪 IMPROVEMENT - API Doc link updated
+💪 IMPROVEMENT - Files and Media
+🐞🛠️ Contact bot trigger issue for new contact fixed
+🐞🛠️💪 - Improvements and Fixes
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+Recommended to update all the files and folders as suggested in upgrade guide
+
+RELEASE #7.1.0 - 03 APR 2026
+--------------------------------------------------------------------------------
+🐞🛠️💪 - Major and minor issues fixes and Improvements
+Updated Files & Folders : --------------------------------------------------------------------------------
+Recommended to update all the files and folders as suggested in upgrade guide
+
+RELEASE #7.0.1 - 02 APR 2026
+--------------------------------------------------------------------------------
+Minor Fixes
+
+--------------------------------------------------------------------------------
+RELEASE #7.0.0 - 01 APR 2026
+--------------------------------------------------------------------------------
+✨  NEW - NON template campaigns (Preset Messages) for 24 Hours opened window contacts
+✨  NEW - More Detailed/Nested permissions for Team Member
+✨  NEW - Hide Email and Phone number from Team Member
+✨  NEW - Automatic Whatsapp message delete
+✨  NEW - Vendors Media View and Delete functionality
+✨  NEW - Vendors Temp Media Delete
+✨  NEW - Bot Actions (Assign Team Member, Assign Labels to contact, Start/Stop AI Bot)
+✨  NEW - Marketing Messages Lite API
+✨  NEW - Template Analytics
+✨  NEW - Sent webhook when contact create or update
+✨  NEW - block mobile app request when mobile app is not activated
+✨  NEW - Added API for Campaign Create
+✨  NEW - Added API for Campaign paginated list
+✨  NEW - Added abort Campaign functionality
+✨  NEW - Added "API Request Example" while Campaign Create and Send Template Message to contact
+✨  NEW - Added API for Groups and Labels in Contact List and Single Contact
+✨  NEW - Added API Campaign status
+✨  NEW - Added API to get paginated list of groups and labels/tags
+✨  NEW - Added API to get message Status
+✨  NEW - Added API Assign Team Member to contact and Enable/Disable AI Bot and Bot Reply
+✨  NEW - Added API get contact groups
+✨  NEW - Added API get contact labels and tags
+✨  NEW - Added API Assign groups to contacts
+✨  NEW - Added API Unassign Groups from Contacts
+✨  NEW - Added API Assign Labels to Contacts
+✨  NEW - Added API Unassign Labels to Contacts
+✨  NEW - Application is prepared for BSUIDs & Username
+💪 IMPROVEMENT - Meta Cloud API updated to V25
+💪 IMPROVEMENT - Send only a summarized version of the recent conversation to the AI bot, instead of the full message history
+💪 IMPROVEMENT - Look and feel improvements
+💪 IMPROVEMENT - Drastic Performance Improvements
+🐞🛠️💪 - Numerous major and minor issues fixes and Improvements
+Updated Files & Folders : --------------------------------------------------------------------------------
+Recommended to update all the files and folders as well as Database as suggested in upgrade guide
+
+--------------------------------------------------------------------------------
+RELEASE #6.5.0 - 27 NOV 2025
+--------------------------------------------------------------------------------
+💪 IMPROVEMENT - Improved visual performance for chrome browser
+🐞🛠️💪 - Numerous major and minor issues fixes and Improvements
+Updated Files & Folders : --------------------------------------------------------------------------------
+Recommended to update all the files and folders as well as Database as suggested in upgrade guide
+
+--------------------------------------------------------------------------------
+RELEASE #6.4.0 - 01 NOV 2025
+--------------------------------------------------------------------------------
+✨  NEW - Advance Filter for contacts
+        Group creation from filtered data
+✨  NEW - Audio Record and Send
+✨  NEW - Added Two Factor Authentication
+✨  NEW - Register Call API
+✨  NEW - Added PhopePe Manual Payment Gateway
+✨  NEW - New APIs
+        - Send Carousel Template Message
+        - Contacts - To fetch contacts
+        - Contact - To fetch specific contact
+💪 IMPROVEMENT - Meta Cloud API updated to V24
+🐞🛠️💪 - Numerous major and minor issues fixes and Improvements
+Updated Files & Folders : --------------------------------------------------------------------------------
+Recommended to update all the files and folders as suggested in upgrade guide
+
+--------------------------------------------------------------------------------
+RELEASE #6.2.4 - 07 OCT 2025
+--------------------------------------------------------------------------------
+🐞🛠️ - Minor Issue related to DB Webhook processing fixed
+🛠️ - Embedded Signup has been removed from Extended License - Separate Addon Required to use Embedded Signup
+Updated Files & Folders : --------------------------------------------------------------------------------
+Recommended to update all the files and folders as suggested in upgrade guide
+
+--------------------------------------------------------------------------------
+RELEASE #6.2.3 - 04 SEP 2025
+--------------------------------------------------------------------------------
+🐞🛠️ - Minor Issue related to Embedded signup fixed
+Updated Files & Folders : --------------------------------------------------------------------------------
+Recommended to update the folders with files mationed below:
+app/Yantrana/Components/Configuration/ConfigurationEngine.php
+config
+
+--------------------------------------------------------------------------------
+RELEASE #6.2.2 - 18 AUG 2025
+--------------------------------------------------------------------------------
+🐞🛠️ - Video uploading issues fixed
+🐞🛠️ - Bots are replying to the Business app chat messages issues fixed
+🐞🛠️💪 - Minor issues fixes and Improvements
+Updated Files & Folders : --------------------------------------------------------------------------------
+Recommended to update the folders with files mationed below:
+app/Yantrana/Components/WhatsAppService/WhatsAppServiceEngine.php
+resources/views/whatsapp/chat.blade.php
+
+--------------------------------------------------------------------------------
+RELEASE #6.2.0 - 13 AUG 2025
+--------------------------------------------------------------------------------
+🐞🛠️ - Now you can edit Edit Media for Bot Reply
+🐞🛠️ - Carousel template preview & improvements
+🐞🛠️ - Subscription Issue fixes & improvements
+🐞🛠️💪 - Minor issues fixes and Improvements
+Updated Files & Folders : --------------------------------------------------------------------------------
+Recommended to update all the files and folders as suggested in upgrade guide
+
+--------------------------------------------------------------------------------
+RELEASE #6.1.1 - 05 AUG 2025
+--------------------------------------------------------------------------------
+🐞🛠️ - Removed runInBackground from Scheduler
+🐞🛠️ - Webhook handling reset to Sync option instead of Database
+🐞🛠️ - Cron Setup detection issue fixed
+🐞🛠️ - Contact Group Creation issue fixed
+🐞🛠️💪 - Minor issues fixes and Improvements
+Updated Files & Folders : --------------------------------------------------------------------------------
+Recommended to update the folders with files mationed below:
+app/Console
+app/Yantrana
+config
+resources
+
+--------------------------------------------------------------------------------
+RELEASE #6.1.0 - 01 AUG 2025
+--------------------------------------------------------------------------------
+🐞🛠️ - Embedded Signup issue fixed
+🐞🛠️ - Translation Scan issue fixed
+🐞🛠️💪 - Minor issues fixes and Improvements
+Updated Files & Folders : --------------------------------------------------------------------------------
+Recommended to update all the files and folders as suggested in upgrade guide
+
+--------------------------------------------------------------------------------
+RELEASE #6.0.0 - 30 JUL 2025
+--------------------------------------------------------------------------------
+✨  NEW - Upgraded to Laravel 12 (PHP 8.2+ Required)
+✨  NEW - Media Carousel Template Support
+✨  NEW - Display Name Update Functionality
+✨  NEW - New Look and Feel
+✨  NEW - WhatsApp Business App Onboarding (Coexistence) using Embedded Signup (Seperate Embedded Signup Addon is Required)
+✨  NEW - Added CSV Contacts Upload and Download (Removed Excel) and Improved and Optimized Contacts Imports
+✨  NEW - Added Block/ Unlock Functionality
+✨  NEW - Added Template Bots
+✨  NEW - Bots as Quick Reply from ChatBox
+✨  NEW - Enable Disable Bots for contacts
+✨  NEW - Expiry for Campaigns so messages should not processed after certain time if execution delayed
+✨  NEW - Re-Campaign - Groups creation from Campaign Contacts data eg. Group from Delivered contacts
+💪 IMPROVEMENT - Webhook processing via Database (Settings available in Super Admin Panel)
+💪 IMPROVEMENT - Campaign Dashboard
+💪 IMPROVEMENT - Meta Cloud API updated to V23
+💪 IMPROVEMENT - Re-queue OR not healthy ecosystem failed messages (Settings available in Super Admin Panel)
+💪 Numerous Major and Minor Improvements & Fixes
+🐞🛠️ - 💪 Numerous Major and Minor Improvements & Fixes
+
+--------------------------------------------------------------------------------
+RELEASE #5.8.4 - 16 APR 2025
+--------------------------------------------------------------------------------
+Improved handling for failed messages due to healthy ecosystem error from Meta
+Improved Labels handling for chat box
+Other Minor Improvements & Fixes
+
+--------------------------------------------------------------------------------
+RELEASE #5.8.3 - 09 APR 2025
+--------------------------------------------------------------------------------
+✨ NEW - YooMoney (Russia) Payment Gateway Added
+Other Minor Improvements & Fixes
+
+--------------------------------------------------------------------------------
+RELEASE #5.8.0 - 31 MAR 2025
+--------------------------------------------------------------------------------
+✨ NEW - Prepared for Mobile App (Mobile App is available separately)
+✨ NEW - New Home Page
+✨ NEW - Added Push notifications
+✨ NEW - Added Contacts filter using Labels for campaign creation
+✨ NEW - Added Contacts filter using Labels in ChatBox
+✨ NEW - Added Support for Sticker, Contacts and location type in incoming messages
+✨ NEW - Now Contact Create & Update accepts custom fields also
+✨ NEW - Added Message logs for all the messages
+IMPROVEMENT - Meta Cloud API updated to V22
+Other Minor Improvements & Fixes
+Updated Files & Folders : --------------------------------------------------------------------------------
+Recommended to update all the files and folders as suggested in upgrade guide
+
+--------------------------------------------------------------------------------
+RELEASE #5.6.5 - 19 DEC 2024
+--------------------------------------------------------------------------------
+✨ NEW - Added dropdown for Team Members in ChatBox
+✨ NEW - Prepared for Addons
+Removed optimize button
+Other Minor Improvements & Fixes
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+Recommended to update all the files and folders as suggested in upgrade guide
+
+--------------------------------------------------------------------------------
+RELEASE #5.6.1 - 29 NOV 2024
+--------------------------------------------------------------------------------
+IMPROVEMENT - Improvements for stuck messages as Accepted
+Other Minor Improvements & Fixes
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+Recommended to update all the files and folders as suggested in upgrade guide
+
+--------------------------------------------------------------------------------
+RELEASE #5.6.0 - 22 NOV 2024
+--------------------------------------------------------------------------------
+✨ NEW - Added two step pin update functionality
+IMPROVEMENT - Handled stuck messages in processing
+IMPROVEMENT - Meta API updated to V21
+Numerous Other Improvements & Fixes
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+Recommended to update all the files and folders as suggested in upgrade guide
+
+--------------------------------------------------------------------------------
+RELEASE #5.5.1 - 20 OCT 2024
+--------------------------------------------------------------------------------
+Critical issue fixes
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+app/Yantrana/Components/WhatsAppService/WhatsAppServiceEngine.php
+app/Yantrana/Support/app-helpers.php
+config/lwSystem.php
+
+--------------------------------------------------------------------------------
+RELEASE #5.5.0 - 18 OCT 2024 - Database Update is Required
+--------------------------------------------------------------------------------
+✨ NEW - Added Sending Flow Templates support
+✨ NEW - OpenAI Integration for AI BOT using Input Text Data & Assistant ID
+✨ NEW - AI Start & Stop Bots
+✨ NEW - Bot timing restrictions settings
+✨ NEW - Added Queue worker/jobs support for the campaign execution
+✨ NEW - Added Optimize & Optimize clear functionality for caching etc
+🛠 FIXED - Email settings from .env file issue fixed
+IMPROVEMENT - Campaign Execution Improvements
+IMPROVEMENT - Now you can disable background image
+Numerous Other Improvements & Fixes
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+Recommended to update all the files and folders as suggested in upgrade guide
+
+--------------------------------------------------------------------------------
+RELEASE #5.1.1 - 02 OCT 2024
+--------------------------------------------------------------------------------
+RazorPay live key issue fixed
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+app/Yantrana/Components/Subscription/ManualSubscriptionEngine.php
+app/Yantrana/Components/Subscription/PaymentEngines/RazorpayEngine.php
+config/__settings.php
+config/lwSystem.php
+resources/views/layouts/app.blade.php
+resources/views/subscription/manual-subscription/razorpay-partial.blade.php
+
+--------------------------------------------------------------------------------
+RELEASE #5.1.0 - 01 OCT 2024
+--------------------------------------------------------------------------------
+Minor Improvements & Fixes
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+app/Http/Kernel.php
+app/Http/Middleware/AppApiAuthenticateMiddleware.php
+app/Providers/AppServiceProvider.php
+app/Yantrana/Components/Auth/AuthEngine.php
+app/Yantrana/Components/Auth/Controllers/ApiUserController.php
+app/Yantrana/Components/Contact/Repositories/ContactRepository.php
+app/Yantrana/Components/WhatsAppService/WhatsAppServiceEngine.php
+app/Yantrana/Services/YesTokenAuth/YesTokenAuth.php
+app/Yantrana/Support/app-helpers.php
+config/__tech.php
+config/lwSystem.php
+config/yes-token-auth.php
+resources/views/layouts/app.blade.php
+resources/views/translation/languages_list.blade.php
+routes/api.php
+
+--------------------------------------------------------------------------------
+RELEASE #5.0.0 - 18 SEP 2024
+--------------------------------------------------------------------------------
+NEW - Color System - Tune it for you, choose your own colors for application
+NEW - RazorPay Payment Gateway (Non-recurring)
+NEW - Now groups will be created if not available while importing contacts using Excel
+NEW - Added Contact Update API request
+NEW - New Unassigned tab
+NEW - Settings for messages per lot for campaigns processing, now you can tune it as per your server capacity.
+FIXED - Webhook getting disabled on some settings issue fixed
+IMPROVEMENT - If the country code not added for numbers messages get stuck as Accepted earlier, now this situation has been handled contact's number gets updated with country code based on response collected from WhatsApp webhook
+IMPROVEMENT - Improved Webhook payload with Media etc
+IMPROVEMENT - Import and Export Contacts from and to Excel Optimized
+IMPROVEMENT - Optimized Campaign report download for Performance
+IMPROVEMENT - Removed Archive Campaign confirmation
+IMPROVEMENT - Fallback value added if variable content missing to avoid invalid paramater issue
+Numerous Improvements & Fixes
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+Recommended to update all the files and folders as suggested in upgrade guide
+
+--------------------------------------------------------------------------------
+RELEASE #4.5.1 - 16 AUG 2024
+--------------------------------------------------------------------------------
+FIXED - Hiding load more button on new message issue fixed
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+app/Yantrana/Components/WhatsAppService/WhatsAppServiceEngine.php
+config/lwSystem.php
+
+--------------------------------------------------------------------------------
+RELEASE #4.5.0 - 14 AUG 2024
+--------------------------------------------------------------------------------
+ADDED - Webhook added - WhatsApp webhook payload will be forwarded to given endpoint
+ADDED - Stop and Start Promotion bot types for Opt In/Out Promotional/Marketing campaigns
+ADDED - PayPal Gateway added for Non-recurring payments
+ADDED - Mobile Number added for Vendor Registration
+IMPROVEMENT - Chat Box Enhancements
+IMPROVEMENT - Comma Separated Multiple triggers are now supported for Bots
+IMPROVEMENT - Bot Flows now Support Multiple IN/Out links
+IMPROVEMENT - Welcome message will get triggered every day if there is no exiting incoming message in particular time span.
+IMPROVEMENT - Required validation has been removed for contacts
+IMPROVEMENT - Subscription Plan changes Restricted base on usages
+IMPROVEMENT - Email notification for Manual UPI/Bank transfer details submission
+IMPROVEMENT - Prorated calculation for for prepaid and Manual subscription change plans
+Numerious Improvements & Fixes
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+Recommended to update all the files and folders as suggested in upgrade guide
+
+--------------------------------------------------------------------------------
+RELEASE #4.2.1 - 25 JUL 2024
+--------------------------------------------------------------------------------
+FIXED - Meta API response change for Message Send Handled
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+app/Yantrana/Components/WhatsAppService/WhatsAppServiceEngine.php
+config/lwSystem.php
+
+--------------------------------------------------------------------------------
+RELEASE #4.2.0 - 24 JUL 2024
+--------------------------------------------------------------------------------
+ADDED - Campaign queue/excutated Report Download
+IMPROVEMENT - Contacts Import Improved
+FIXED - Bot Edit issues for MariaDB fixed
+Minor Improvements & Fixes
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+app/Http/Middleware/RedirectIfAuthenticated.php
+app/Yantrana/Components/Auth/Controllers/AuthController.php
+app/Yantrana/Components/BotReply/BotReplyEngine.php
+app/Yantrana/Components/BotReply/Controllers/BotReplyController.php
+app/Yantrana/Components/Campaign/CampaignEngine.php
+app/Yantrana/Components/Campaign/Controllers/CampaignController.php
+app/Yantrana/Components/Campaign/Repositories/CampaignRepository.php
+app/Yantrana/Components/Contact/ContactEngine.php
+app/Yantrana/Components/Contact/Controllers/ContactController.php
+app/Yantrana/Support/custom-tech-config.php
+config/lwSystem.php
+resources/css/app.scss
+resources/js/services/__jsware
+resources/views/bot-reply/bot-forms-partial.blade.php
+resources/views/vendor/notifications/email.blade.php
+resources/views/whatsapp/campaign-status.blade.php
+routes/web.php
+public/dist
+
+--------------------------------------------------------------------------------
+RELEASE #4.1.1 - 20 JUL 2024
+--------------------------------------------------------------------------------
+FIXED - Bot Triggering issues fixed
+Some minor Improvements
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+app/Yantrana/Components/BotReply/Repositories/BotReplyRepository.php
+app/Yantrana/Components/WhatsAppService/WhatsAppServiceEngine.php
+config/lwSystem.php
+resources/views/bot-reply/bot-flow/builder.blade.php
+resources/views/whatsapp/campaign-executed-log-partial.blade.php
+
+--------------------------------------------------------------------------------
+RELEASE #4.1.0 - 19 JUL 2024
+--------------------------------------------------------------------------------
+FIXED - Critical Bot Edit issues fixed
+FIXED - Welcome Bot Not triggering issue fixed
+Some minor Improvements
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+app/Yantrana/Components/BotReply/BotReplyEngine.php
+app/Yantrana/Components/BotReply/Repositories/BotReplyRepository.php
+app/Yantrana/Components/Page/PageEngine.php
+app/Yantrana/Components/WhatsAppService/WhatsAppServiceEngine.php
+public/imgs/outer-home/bot-flow1.png
+public/imgs/outer-home/media-message.png
+resources/css/app.scss
+resources/views/outer-home-2.blade.php
+resources/views/bot-reply/bot-forms-partial.blade.php
+resources/views/bot-reply/list.blade.php
+resources/views/bot-reply/bot-flow/builder.blade.php
+resources/views/page/list.blade.php
+public/dist
+
+--------------------------------------------------------------------------------
+RELEASE #4.0.1 - 17 JUL 2024
+--------------------------------------------------------------------------------
+FiX - Issue Fixes
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+resources/views/bot-reply/bot-flow/builder.blade.php
+resources/views/whatsapp-service/interaction-message-partial.blade.php
+resources/views/whatsapp-service/message-template-partial.blade.php
+resources/views/bot-reply/bot-flow/list.blade.php
+config/lwSystem.php
+
+--------------------------------------------------------------------------------
+RELEASE #4.0.0 - 17 JUL 2024
+--------------------------------------------------------------------------------
+NEW - Bot Flow
+NEW - Bot Duplicate Functionality
+NEW - New Landing Page
+NEW - Custom Pages
+NEW - Support for Soketi for realtime communication along
+NEW - Business Profile Update Functionality
+FIX - Contact Import Bug Fixes
+IMPROVEMENT  - Templates sync limit increased to 500
+IMPROVEMENT  - Contact Remove from Groups
+IMPROVEMENT - On API request if contact with number is not present in the system it will be created automatically you can provide additional contact info using contact object
+IMPROVEMENT - Added groups parameters for contact to create for API, now you can send comma separated groups names if it does not exist group will be created
+Numerous Bug/Issue Fixes and Improvements
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+Recommended to update all the files and folders as suggested in upgrade guide
+
+--------------------------------------------------------------------------------
+RELEASE #3.5.5 - 30 JUN 2024
+--------------------------------------------------------------------------------
+Bug Fixed  - Interactive message edit having Media issue fixed
+IMPROVEMENT - In campaigns now if throughput limit reached then message gets requeued
+Issue Fixes and Improvements
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+
+app/Yantrana/Components/BotReply/BotReplyEngine.php
+app/Yantrana/Components/BotReply/Models/BotReplyModel.php
+app/Yantrana/Components/BotReply/Repositories/BotReplyRepository.php
+app/Yantrana/Components/Campaign/Controllers/CampaignController.php
+app/Yantrana/Components/Contact/ContactEngine.php
+app/Yantrana/Components/WhatsAppService/WhatsAppServiceEngine.php
+config/lwSystem.php
+resources/js/services/__jsware
+resources/views/outer-home.blade.php
+resources/views/whatsapp/campaign-queue-log-partial.blade.php
+
+--------------------------------------------------------------------------------
+RELEASE #3.5.0 - 23 JUN 2024
+--------------------------------------------------------------------------------
+NEW - Added CRM features like Contact Info, Labels/Tags, Notes etc
+NEW - List Message Type is added for Bot Replies
+NEW - Contact information functionality for superadmin
+NEW - Added permission for Assigned chat only
+NEW - Added permission for Manage Templates
+NEW - Added Feature to Enable AI Bot reply for newly added contacts by incoming messages, imports etc
+IMPROVEMENT - API Token now can be sent as parameter using token
+IMPROVEMENT - Sidebar Optimized & Exampandable with Small logo
+IMPROVEMENT - WhatsApp Chat Page Layouting Improved along with CRM Features
+IMPROVEMENT - Bot reply trigger type can be changed now
+Numerous Performance & Other Improvements and fixes
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+Recommended to update all the files and folders as suggested in upgrade guide
+
+--------------------------------------------------------------------------------
+RELEASE #3.2.4 - 13 JUN 2024
+--------------------------------------------------------------------------------
+Important Social login/registration issues fixed
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+
+app/Yantrana/Base/BaseMailer.php
+app/Yantrana/Components/Auth/AuthEngine.php
+app/Yantrana/Components/Auth/Controllers/AuthController.php
+app/Yantrana/Components/Auth/Repositories/AuthRepository.php
+config/lwSystem.php
+
+--------------------------------------------------------------------------------
+RELEASE #3.2.3 - 13 JUN 2024
+--------------------------------------------------------------------------------
+Important improvements and fixes
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+
+app/Yantrana/Base/BaseMediaEngine.php
+app/Yantrana/Components/Media/MediaEngine.php
+app/Yantrana/Components/WhatsAppService/WhatsAppServiceEngine.php
+app/Yantrana/Components/WhatsAppService/Controllers/WhatsAppServiceController.php
+app/Yantrana/Components/WhatsAppService/Repositories/WhatsAppMessageLogRepository.php
+app/Yantrana/Support/app-helpers.php
+config/lwSystem.php
+resources/js/services/__jsware
+resources/views/layouts/app.blade.php
+resources/views/whatsapp/chat.blade.php
+resources/views/whatsapp-service/message-template-partial.blade.php
+resources/views/whatsapp-service/template-preview-partial.blade.php
+resources/views/whatsapp-service/templates/update-template.blade.php
+public/dist
+
+--------------------------------------------------------------------------------
+RELEASE #3.2.0 - 12 JUN 2024
+--------------------------------------------------------------------------------
+NEW - External Home Page link Functionality
+NEW - Added Campaign Archive Functionality
+NEW - Contacts Filter added for Unread only in chat
+NEW - Requeue Failed queue messages
+IMPROVEMENT - Now the messages doesn't mark as read if bot reply triggered
+IMPROVEMENT - Drastically Improved Campaign Excecution speed
+IMPROVEMENT - Improved Campaign Dashboard and log
+IMPROVEMENT - Gravitar Removed now uses Contact Name Initials
+IMPROVEMENT - Added Access Token information and link to debug token
+IMPROVEMENT - Meta tags added for Home Page
+Numarious Issue Fixes and Improvements
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+
+app/Console/Kernel.php
+app/Yantrana/Components/Campaign/CampaignEngine.php
+app/Yantrana/Components/Campaign/Controllers/CampaignController.php
+app/Yantrana/Components/Campaign/Models/CampaignModel.php
+app/Yantrana/Components/Campaign/Repositories/CampaignRepository.php
+app/Yantrana/Components/Contact/ContactEngine.php
+app/Yantrana/Components/Contact/Models/ContactModel.php
+app/Yantrana/Components/Contact/Repositories/GroupContactRepository.php
+app/Yantrana/Components/Home/HomeEngine.php
+app/Yantrana/Components/Home/Controllers/HomeController.php
+app/Yantrana/Components/Vendor/VendorEngine.php
+app/Yantrana/Components/Vendor/VendorSettingsEngine.php
+app/Yantrana/Components/WhatsAppService/WhatsAppServiceEngine.php
+app/Yantrana/Components/WhatsAppService/Controllers/WhatsAppServiceController.php
+app/Yantrana/Components/WhatsAppService/Controllers/WhatsAppTemplateController.php
+app/Yantrana/Components/WhatsAppService/Models/WhatsAppMessageLogModel.php
+app/Yantrana/Components/WhatsAppService/Repositories/WhatsAppMessageLogRepository.php
+app/Yantrana/Components/WhatsAppService/Repositories/WhatsAppMessageQueueRepository.php
+app/Yantrana/Components/WhatsAppService/Services/WhatsAppApiService.php
+app/Yantrana/Components/WhatsAppService/Services/WhatsAppConnectApiService.php
+app/Yantrana/Support/app-helpers.php
+config/__settings.php
+config/__tech.php
+config/__vendor-settings.php
+config/lwSystem.php
+resources/css/app.scss
+resources/js/services/__jsware
+resources/views/outer-home.blade.php
+resources/views/campaign/list.blade.php
+resources/views/configuration/general.blade.php
+resources/views/configuration/other.blade.php
+resources/views/layouts/app.blade.php
+resources/views/vendors/settings/api-access.blade.php
+resources/views/vendors/settings/whatsapp-cloud-api-setup.blade.php
+resources/views/whatsapp/campaign-executed-log-partial.blade.php
+resources/views/whatsapp/campaign-queue-log-partial.blade.php
+resources/views/whatsapp/campaign-status.blade.php
+resources/views/whatsapp/chat.blade.php
+resources/views/whatsapp/template-send-message.blade.php
+resources/views/whatsapp-service/templates/new-template.blade.php
+resources/views/whatsapp-service/templates/update-template.blade.php
+routes/web.php
+public/dist
+
+RELEASE #3.0.0 - 03 JUN 2024
+--------------------------------------------------------------------------------
+NEW - Embedded Signup for WhatsApp Setup
+NEW - Multiple Phone Numbers Support
+NEW - Improved Manual WhatsApp Setup
+NEW - WhatsApp Template Management
+NEW - Automated Webhook Creation
+NEW - Connect/Disconnect Webhook
+NEW - Disconnect WhatsApp Account
+NEW - Reaction Message shown as replied message
+NEW - Welcome Email for Vendors
+IMPROVEMENT - Improved Campaign Dashboard
+IMPROVEMENT - Chatbox Enhancements & More responsive
+IMPROVEMENT - Contact Name updated from profile if not available
+IMPROVEMENT - Manage Team Member Status
+IMPROVEMENT - Updated Facebook API to version 20.0
+Numarious Issue Fixes and Improvements
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+Recommended to update all the files and folders as suggested in upgrade guide
+
+RELEASE #2.9.0 - 07 MAY 2024
+--------------------------------------------------------------------------------
+Issue Fixes and Improvements
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+app/Yantrana/Components/BotReply/Controllers/BotReplyController.php
+app/Yantrana/Components/Contact/ContactEngine.php
+app/Yantrana/Components/Vendor/Controllers/VendorController.php
+app/Yantrana/Components/WhatsAppService/WhatsAppServiceEngine.php
+app/Yantrana/Support/app-helpers.php
+config/lwSystem.php
+resources/views/bot-reply/list.blade.php
+resources/views/layouts/app.blade.php
+resources/views/vendor/subscription.blade.php
+
+RELEASE #2.8.5 - 29 APR 2024
+--------------------------------------------------------------------------------
+IMPROVEMENT - Minor Look and Feel Improvements
+IMPROVEMENT - System Users now Called as Team Members
+Minor Fixes and Improvements
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+webpack.mix.js
+app/Yantrana/Components/Subscription/Support/SubscriptionPlanDetails.php
+app/Yantrana/Components/User/UserEngine.php
+app/Yantrana/Components/User/Support/permissions.php
+app/Yantrana/Components/Vendor/VendorEngine.php
+app/Yantrana/Support/app-helpers.php
+config/lw-plans.php
+config/lwSystem.php
+resources/css/app.scss
+resources/js/libs/jquery.textcomplete/jquery.textcomplete.min.js
+resources/views/outer-home.blade.php
+resources/views/contact/list.blade.php
+resources/views/layouts/app.blade.php
+resources/views/layouts/navbars/sidebar.blade.php
+resources/views/user/list.blade.php
+resources/views/whatsapp/chat.blade.php
+routes/web.php
+public/dist
+
+--------------------------------------------------------------------------------
+RELEASE #2.8.0 - 25 APR 2024
+--------------------------------------------------------------------------------
+NEW - Added Call to Action (CTA) URL Button type for reply bots
+NEW - Subscription Messages shown through the pages if does not have any active plan or expiring or expired
+NEW - Bulk Action on Contacts to delete and Assign Groups
+IMPROVEMENT - Chat Box message shown quickly
+Minor Fixes and Improvements
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+app/Yantrana/__Laraware
+app/Yantrana/Components/BotReply/BotReplyEngine.php
+app/Yantrana/Components/BotReply/Controllers/BotReplyController.php
+app/Yantrana/Components/Contact/ContactEngine.php
+app/Yantrana/Components/Contact/Controllers/ContactController.php
+app/Yantrana/Components/Contact/Models/ContactModel.php
+app/Yantrana/Components/Contact/Repositories/ContactRepository.php
+app/Yantrana/Components/Subscription/Support/SubscriptionPlanDetails.php
+app/Yantrana/Components/WhatsAppService/WhatsAppServiceEngine.php
+app/Yantrana/Components/WhatsAppService/Models/WhatsAppMessageLogModel.php
+app/Yantrana/Components/WhatsAppService/Repositories/WhatsAppMessageLogRepository.php
+app/Yantrana/Components/WhatsAppService/Services/WhatsAppApiService.php
+app/Yantrana/Support/app-helpers.php
+config/__vendor-settings.php
+config/lwSystem.php
+resources/css/app.scss
+resources/js/app.js
+resources/views/bot-reply/list.blade.php
+resources/views/contact/list.blade.php
+resources/views/layouts/app.blade.php
+resources/views/subscription/manual-subscription/list.blade.php
+resources/views/translation/languages_list.blade.php
+resources/views/vendors/vendor-subscription.blade.php
+resources/views/whatsapp/chat.blade.php
+resources/views/whatsapp-service/interaction-message-partial.blade.php
+routes/web.php
+public/dist
+
+--------------------------------------------------------------------------------
+RELEASE #2.6.0 - 19 APR 2024 - Databese Update is Required
+--------------------------------------------------------------------------------
+NEW - Manual Subscription System
+    - Manual Subscription by UPI Payments
+    - Manual Subscription by Bank Transfer
+NEW - Bot Reply Validation - Validate Bot reply get validated before save by sending it to Test Number
+IMPROVEMENT - Improved Bot Replies DataTable with Type
+IMPROVEMENT - Now system recognises if artisan schedule:run has been run/setup for cron
+IMPROVEMENT - Contacts datatable listview increased to 500 records
+IMPROVEMENT - Chat Box now also shows the Contact WhatsApp Number
+Minor Fixes and Improvements
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+webpack.mix.js
+app/Yantrana/__Laraware
+app/Yantrana/Components/BotReply/BotReplyEngine.php
+app/Yantrana/Components/BotReply/Controllers/BotReplyController.php
+app/Yantrana/Components/BotReply/Repositories/BotReplyRepository.php
+app/Yantrana/Components/Configuration/ConfigurationEngine.php
+app/Yantrana/Components/Configuration/Controllers/ConfigurationController.php
+app/Yantrana/Components/Contact/ContactEngine.php
+app/Yantrana/Components/Contact/Models/ContactModel.php
+app/Yantrana/Components/Home/Controllers/HomeController.php
+app/Yantrana/Components/Subscription/ManualSubscriptionEngine.php
+app/Yantrana/Components/Subscription/SubscriptionEngine.php
+app/Yantrana/Components/Subscription/Controllers/ManualSubscriptionController.php
+app/Yantrana/Components/Subscription/Controllers/SubscriptionController.php
+app/Yantrana/Components/Subscription/Interfaces/ManualSubscriptionEngineInterface.php
+app/Yantrana/Components/Subscription/Interfaces/ManualSubscriptionRepositoryInterface.php
+app/Yantrana/Components/Subscription/Models/ManualSubscriptionModel.php
+app/Yantrana/Components/Subscription/Repositories/ManualSubscriptionRepository.php
+app/Yantrana/Components/Subscription/Support/SubscriptionPlanDetails.php
+app/Yantrana/Components/Vendor/VendorEngine.php
+app/Yantrana/Components/Vendor/Controllers/VendorController.php
+app/Yantrana/Components/Vendor/Interfaces/VendorTransactionRepositoryInterface.php
+app/Yantrana/Components/Vendor/Models/VendorTransactionModel.php
+app/Yantrana/Components/Vendor/Repositories/VendorTransactionRepository.php
+app/Yantrana/Components/WhatsAppService/WhatsAppServiceEngine.php
+app/Yantrana/Components/WhatsAppService/Services/WhatsAppApiService.php
+app/Yantrana/Support/app-helpers.php
+app/Yantrana/Support/php-gettext-1.0.12/gettext.inc
+config/__settings.php
+config/__tech.php
+config/lwSystem.php
+public/imgs/bank-transfer.svg
+public/imgs/upi-icon.png
+resources/css/app.scss
+resources/js/app.js
+resources/js/services/__jsware
+resources/outer-home/app-public.scss
+resources/views/bot-reply/list.blade.php
+resources/views/configuration/licence-information.blade.php
+resources/views/configuration/other.blade.php
+resources/views/configuration/payment.blade.php
+resources/views/configuration/subscription-plans.blade.php
+resources/views/contact/list.blade.php
+resources/views/layouts/app.blade.php
+resources/views/layouts/navbars/sidebar.blade.php
+resources/views/subscription/manual-subscription/list.blade.php
+resources/views/subscription/manual-subscription/manual-pay.blade.php
+resources/views/vendor/subscription.blade.php
+resources/views/vendors/list.blade.php
+resources/views/vendors/vendor-dashboard.blade.php
+resources/views/vendors/vendor-subscription.blade.php
+resources/views/whatsapp/chat.blade.php
+routes/web.php
+public/dist
+vendor
+
+--------------------------------------------------------------------------------
+RELEASE #2.3.5 - 05 APR 2024
+--------------------------------------------------------------------------------
+RESOLVED - Media & Media Header Type Issue for Media Reply Bot fixed
+RESOLVED - New Language issue for translation Fixed
+Minor Fixes and Improvements
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+app/Yantrana/Components/BotReply/Controllers/BotReplyController.php
+app/Yantrana/Components/User/Controllers/UserController.php
+config/lwSystem.php
+resources/css/app.scss
+resources/views/outer-home.blade.php
+resources/views/bot-reply/list.blade.php
+resources/views/configuration/subscription-plans.blade.php
+resources/views/translation/list.blade.php
+public/dist
+
+--------------------------------------------------------------------------------
+RELEASE #2.3.0 - 03 APR 2024
+--------------------------------------------------------------------------------
+NEW - Added Media Message Bot Reply
+NEW - Send Message APIs can create contact
+    - Added Create Contact API
+Minor Fixes and Improvements
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+app/Yantrana/__Laraware
+app/Yantrana/Components/BotReply/BotReplyEngine.php
+app/Yantrana/Components/BotReply/Controllers/BotReplyController.php
+app/Yantrana/Components/BotReply/Models/BotReplyModel.php
+app/Yantrana/Components/Contact/ContactEngine.php
+app/Yantrana/Components/Contact/Controllers/ContactController.php
+app/Yantrana/Components/Contact/Repositories/ContactRepository.php
+app/Yantrana/Components/WhatsAppService/WhatsAppServiceEngine.php
+app/Yantrana/Components/WhatsAppService/Controllers/WhatsAppServiceController.php
+app/Yantrana/Components/WhatsAppService/Services/WhatsAppApiService.php
+app/Yantrana/Support/app-helpers.php
+resources/css/app.scss
+resources/js/app.js
+resources/views/bot-reply/list.blade.php
+resources/views/whatsapp/chat.blade.php
+resources/views/whatsapp-service/media-message-partial.blade.php
+routes/api.php
+public/dist
+app/Yantrana/Components/Vendor/Controllers/VendorSettingsController.php
+config/lwSystem.php
+
+--------------------------------------------------------------------------------
+RELEASE #2.2.0 - 01 APR 2024
+--------------------------------------------------------------------------------
+RESOLVED - Critical issue fixed related to assigning the custom field values
+NEW - API for Send Template Message
+    - More APIs coming ...
+NEW - Login as Vendor Admin
+NEW - Added settings for Disallow Disposable Email usages
+IMPROVEMENT - Added URL, Date, Time, Date and Time local input fields for Custom Fields
+Minor Fixes and Improvements
+
+Updated Files & Folders : --------------------------------------------------------------------------------
+composer.json
+vendor
+app/Http/Middleware/ApiVendorAccessCheckpost.php
+app/Http/Middleware/VendorAccessCheckpost.php
+app/Yantrana/__Laraware
+app/Yantrana/Components/Auth/AuthEngine.php
+app/Yantrana/Components/Auth/Requests/RegisterRequest.php
+app/Yantrana/Components/BotReply/BotReplyEngine.php
+app/Yantrana/Components/BotReply/Controllers/BotReplyController.php
+app/Yantrana/Components/Contact/ContactEngine.php
+app/Yantrana/Components/Contact/Models/ContactCustomFieldValueModel.php
+app/Yantrana/Components/Contact/Models/ContactModel.php
+app/Yantrana/Components/Home/Controllers/HomeController.php
+app/Yantrana/Components/User/Controllers/UserController.php
+app/Yantrana/Components/Vendor/VendorEngine.php
+app/Yantrana/Components/Vendor/Controllers/VendorController.php
+app/Yantrana/Components/Vendor/Controllers/VendorSettingsController.php
+app/Yantrana/Components/WhatsAppService/WhatsAppServiceEngine.php
+app/Yantrana/Components/WhatsAppService/Controllers/WhatsAppServiceController.php
+app/Yantrana/Support/app-helpers.php
+config/__settings.php
+config/__tech.php
+config/app.php
+config/lwSystem.php
+resources/views/bot-reply/list.blade.php
+resources/views/configuration/user.blade.php
+resources/views/contact/list.blade.php
+resources/views/layouts/navbars/navs/auth.blade.php
+resources/views/vendors/list.blade.php
+resources/views/vendors/settings/api-access.blade.php
+routes/web.php
+
+--------------------------------------------------------------------------------
+RELEASE #2.1.0 - 29 MAR 2024
+--------------------------------------------------------------------------------
+RESOLVED - Duplicate Phone Number issue while importing contacts from Excel Sheet
+IMPROVEMENT - Labels updated for Chat Box
+Minor Improvements
+
+--------------------------------------------------------------------------------
+RELEASE #2.0.0 - 28 MAR 2024
+--------------------------------------------------------------------------------
+NEW - FlowiseAI Chatbots Integration Facility for Vendors
+NEW - AI Bot and API Access added to the Subscription Plans
+NEW - Advance Reply Bots Added - Reply Button Interaction Bots with Media Support
+NEW - YouTube video preview added in chat box
+NEW - Team Members (Agents etc)
+    - Vendor can login as Team Member right from their admin
+    - Assign Contact to User/Agent
+NEW - API for Send Message and Send Media Messages
+      More APIs coming soon
+NEW - Vendor Registration On/Off functionality
+    - So you can turn off the registration from outside and manually register new vendors from admin
+NEW - Footer Code so you can add your JS Integrations like Google Analytics etc
+NEW - .htaccess file added for shared hosting they may not able to point their domain to public folder
+IMPROVEMENT - Bot Creation restrictions removed which are based on trigger subject earlier
+Numarious fixes and Improvements
+
+--------------------------------------------------------------------------------
+
+RELEASE #1.1.1 - 14 MAR 2024
+--------------------------------------------------------------------------------
+RESOLVED - Bot Trigger issue fixed
+Other minor fixes
+
+--------------------------------------------------------------------------------
+RELEASE #1.1.0 - 13 MAR 2024
+--------------------------------------------------------------------------------
+NEW -  QR Code to share with the people to connect
+NEW - Webhook Messages field verification process
+INFO - Uses information updated
+Issue fixes & Numarious Improvements
+
+--------------------------------------------------------------------------------
+RELEASE #1.0.0 - 9 MAR 2024
+--------------------------------------------------------------------------------
