@@ -15,7 +15,13 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        // Register stub for anumanitNirikshan license check when not provided by vendor package.
+        // In production this binding is overridden by the licensed vendor package.
+        if (! $this->app->bound('anumanitNirikshan')) {
+            $this->app->bind('anumanitNirikshan', function () {
+                return fn () => true;
+            });
+        }
     }
 
     /**

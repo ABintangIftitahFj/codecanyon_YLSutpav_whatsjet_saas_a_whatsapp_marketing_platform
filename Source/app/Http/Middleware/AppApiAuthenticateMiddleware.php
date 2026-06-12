@@ -29,7 +29,9 @@ class AppApiAuthenticateMiddleware
 
         // Check if addon installed and activated or not
         $addonLicInfo = getAppSettings('lwAddon' . 'WhatsJetChatMobileApp');
-        if ((__isEmpty($addonLicInfo['registration_id'])) or (sha1(array_get($_SERVER, 'HTTP_HOST', '') . $addonLicInfo['registration_id'] . '1.0+') !== $addonLicInfo['signature'])) {
+        $registrationId = is_array($addonLicInfo) ? ($addonLicInfo['registration_id'] ?? null) : null;
+        $signature = is_array($addonLicInfo) ? ($addonLicInfo['signature'] ?? null) : null;
+        if (!$registrationId or !$signature or (sha1(array_get($_SERVER, 'HTTP_HOST', '') . $registrationId . '1.0+') !== $signature)) {
             abort(404, __tr('Invalid Request'));
         }
 

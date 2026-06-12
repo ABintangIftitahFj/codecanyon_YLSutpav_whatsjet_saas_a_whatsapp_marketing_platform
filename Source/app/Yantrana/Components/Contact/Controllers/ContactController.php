@@ -219,6 +219,33 @@ class ContactController extends BaseController
         return $this->processResponse($processReaction);
     }
     /**
+     * Find or create contact by phone number — used by mobile app to initiate chat.
+     *
+     * @param  BaseRequestTwo  $request
+     * @return json
+     */
+    public function initiateContactByPhone(BaseRequestTwo $request)
+    {
+        validateVendorAccess('messaging');
+
+        $request->validate([
+            'phone_number' => [
+                'required',
+                'numeric',
+                'min_digits:5',
+                'max_digits:20',
+                'doesnt_start_with:+,0',
+            ],
+        ]);
+
+        $processReaction = $this->contactEngine->initiateContactByPhone(
+            $request->get('phone_number')
+        );
+
+        return $this->processResponse($processReaction);
+    }
+
+    /**
      * Contact create process by API
      *
      * @param  object BaseRequest $request
@@ -530,7 +557,7 @@ class ContactController extends BaseController
         // process the validation based on the provided rules
         $request->validate([
             'contactIdOrUid' => 'required',
-            'email' => 'nullable|email',
+            'email' => 'nullable',
         ]);
         // ask engine to process the request
         $processReaction = $this->contactEngine->processContactUpdate($request->get('contactIdOrUid'), $request->all());

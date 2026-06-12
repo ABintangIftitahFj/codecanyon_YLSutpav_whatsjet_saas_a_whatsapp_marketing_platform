@@ -536,6 +536,52 @@ class ContactEngine extends BaseEngine implements ContactEngineInterface
     }
 
     /**
+     * Find or create a contact by phone number (wa_id).
+     * Used by mobile app to initiate chat with a new phone number.
+     *
+     * @param  string  $phoneNumber  - numeric phone without leading 0 or +
+     * @return EngineResponse
+     */
+    public function initiateContactByPhone(string $phoneNumber)
+    {
+        $vendorId = getVendorId();
+
+        // Look up existing contact by wa_id
+        $contact = $this->contactRepository->fetchContactByPhoneNumberOrEmail($phoneNumber);
+
+        if (!__isEmpty($contact)) {
+            return $this->engineSuccessResponse([
+                'contact_uid' => $contact->_uid,
+                'is_new'      => false,
+            ], __tr('Contact found.'));
+        }
+
+        // Check plan limit before creating
+        $vendorPlanDetails = vendorPlanDetails('contacts', $this->contactRepository->countIt([
+            'vendors__id' => $vendorId,
+        ]), $vendorId);
+        if (!$vendorPlanDetails['is_limit_available']) {
+            return $this->engineResponse(22, null, $vendorPlanDetails['message']);
+        }
+
+        // Create a minimal new contact
+        $created = $this->contactRepository->storeContact([
+            'phone_number' => $phoneNumber,
+            'first_name'   => '',
+            'last_name'    => '',
+        ], $vendorId);
+
+        if (!$created) {
+            return $this->engineFailedResponse([], __tr('Could not create contact.'));
+        }
+
+        return $this->engineSuccessResponse([
+            'contact_uid' => $created->_uid,
+            'is_new'      => true,
+        ], __tr('Contact created.'));
+    }
+
+    /**
      * Contact prepare update data
      *
      * @param  mix  $contactIdOrUid

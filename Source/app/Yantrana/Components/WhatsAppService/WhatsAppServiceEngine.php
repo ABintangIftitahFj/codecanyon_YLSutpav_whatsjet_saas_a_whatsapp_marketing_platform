@@ -2743,10 +2743,22 @@ class WhatsAppServiceEngine extends BaseEngine implements WhatsAppServiceEngineI
             $contactUid = $request->contact_uid;
             $fromPhoneNumberId = $request->from_phone_number_id;
         }
+        // Resolve quoted_message_wamid → _uid so we can store the reply reference
+        $repliedToMessageLogUid = null;
+        if (!is_array($request)) {
+            $quotedWamid = $request->quoted_message_wamid ?? null;
+            if ($quotedWamid) {
+                $repliedToLog = $this->whatsAppMessageLogRepository->fetchIt(['wamid' => $quotedWamid]);
+                if (!__isEmpty($repliedToLog)) {
+                    $repliedToMessageLogUid = $repliedToLog->_uid;
+                }
+            }
+        }
         // options extend
         $options = array_merge([
             'from_phone_number_id' => $fromPhoneNumberId,
             'messageWamid' => null,
+            'repliedToMessageLogUid' => $repliedToMessageLogUid,
         ], $options);
 
         $contact = $this->contactRepository->getVendorContact($contactUid, $vendorId);
@@ -2793,6 +2805,7 @@ class WhatsAppServiceEngine extends BaseEngine implements WhatsAppServiceEngineI
                 'wab_phone_number_id' => $currentBusinessPhoneNumber,
                 'message' => $messageBody,
                 'messaged_at' => now(),
+                'replied_to_whatsapp_message_logs__uid' => $options['repliedToMessageLogUid'] ?? null,
                 '__data' => [
                     'options' => Arr::only($options, [
                         'bot_reply',

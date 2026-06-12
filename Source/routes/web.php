@@ -730,6 +730,11 @@ Route::middleware([
                     'unreadCount',
                 ])->name('vendor.chat_message.read.unread_count');
 
+                Route::post('/contact/initiate-by-phone', [
+                    ContactController::class,
+                    'initiateContactByPhone',
+                ])->name('vendor.contact.initiate_by_phone');
+
                 Route::post('/contact/chat/send', [
                     WhatsAppServiceController::class,
                     'sendChatMessage',
