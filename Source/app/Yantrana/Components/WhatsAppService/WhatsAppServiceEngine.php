@@ -3689,8 +3689,14 @@ class WhatsAppServiceEngine extends BaseEngine implements WhatsAppServiceEngineI
         if (__isEmpty($webhookEntry)) {
             return response()->json(['status' => 'failed'], 500);
         }
-        if (getAppSettings('enable_queue_jobs_for_campaigns')) {
-            ProcessMessageWebhookJob::dispatch();
+        try {
+            $this->processWebhookRequest($request, $vendorUid);
+            $webhookEntry->delete();
+        } catch (\Throwable $e) {
+            \Log::error('WhatsApp webhook immediate processing failed: ' . $e->getMessage());
+            if (getAppSettings('enable_queue_jobs_for_campaigns')) {
+                ProcessMessageWebhookJob::dispatch();
+            }
         }
         // response
         return response()->json(['status' => 'success']);
