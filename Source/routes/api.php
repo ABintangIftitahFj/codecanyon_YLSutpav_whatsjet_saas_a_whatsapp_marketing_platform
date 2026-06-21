@@ -390,6 +390,11 @@ Route::group([
             CampaignController::class,
             'campaignStatusView',
         ])->name('app_api.vendor.campaign.read.dashboard_status');
+        // Schedule new campaign via mobile app
+        Route::post('/whatsapp/campaign/schedule', [
+            WhatsAppServiceController::class,
+            'appApiScheduleCampaign',
+        ])->name('app_api.vendor.campaign.write.schedule');
     });
 
     // logout

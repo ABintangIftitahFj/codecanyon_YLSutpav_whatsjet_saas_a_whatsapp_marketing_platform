@@ -1177,4 +1177,39 @@ class WhatsAppServiceController extends BaseController
 
         return $this->processApiResponse($processReaction, $processReaction->data());
     }
+
+    /**
+     * Schedule Campaign via Mobile App API
+     *
+     * @param BaseRequestTwo $request
+     * @return json
+     */
+    public function appApiScheduleCampaign(BaseRequestTwo $request)
+    {
+        validateVendorAccess('manage_campaigns');
+        if(!isWhatsAppBusinessAccountReady()) {
+            return $this->processResponse(22, [
+                22 => __tr('Please complete your WhatsApp Cloud API Setup first')
+            ], [], true);
+        }
+        $validations = [
+            'contact_group' => 'required|string',
+            'timezone' => 'required',
+            'title' => 'required',
+            'template_name' => 'required|string',
+            'template_language' => 'required|string',
+            'contact_labels' => 'nullable|string',
+            'schedule_at' => 'nullable|date',
+            'expire_at' => 'nullable|date|after:schedule_at'
+        ];
+
+        $request->validate($validations);
+        $processReaction = $this->whatsAppServiceEngine->processAPICampaignCreate($request);
+
+        if ($processReaction->failed()) {
+            return $this->processResponse($processReaction);
+        }
+
+        return $this->processResponse($processReaction);
+    }
 }
