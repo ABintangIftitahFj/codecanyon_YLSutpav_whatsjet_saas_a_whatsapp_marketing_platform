@@ -181,6 +181,95 @@ class SubscriptionController extends BaseController
         return $this->subscriptionEngine->processCreate($request);
     }
 
+    /**
+     * Mobile App API: Get current subscription info with features
+     *
+     * @return json
+     */
+    public function appApiSubscriptionInfo()
+    {
+        validateVendorAccess('administrative');
+        $vendorId = getVendorId();
+        $subscription = getVendorCurrentActiveSubscription($vendorId);
+
+        $planType = 'free';
+        $planTitle = 'Free';
+        $hasActivePlan = false;
+        $endsAt = null;
+        $features = [];
+
+        $freePlan = getFreePlan();
+        $configFreePlan = getConfigFreePlan();
+
+        if (__isEmpty($subscription)) {
+            $planType = 'free';
+            $planTitle = $freePlan['title'] ?? 'Free';
+            $hasActivePlan = $freePlan['enabled'] ?? true;
+            $sourceFeatures = $freePlan['features'] ?? $configFreePlan['features'] ?? [];
+        } else {
+            $planId = $subscription->plan_id ?? $subscription->type ?? null;
+            $planType = 'paid';
+            $hasActivePlan = true;
+            $endsAt = optional($subscription->ends_at)->toDateTimeString();
+
+            if ($planId) {
+                $paidPlan = getPaidPlans($planId);
+                if (!__isEmpty($paidPlan)) {
+                    $planTitle = $paidPlan['title'] ?? $planId;
+                    $sourceFeatures = $paidPlan['features'] ?? [];
+                } else {
+                    $sourceFeatures = $freePlan['features'] ?? $configFreePlan['features'] ?? [];
+                }
+            } else {
+                $sourceFeatures = $freePlan['features'] ?? $configFreePlan['features'] ?? [];
+            }
+        }
+
+        foreach ($sourceFeatures as $key => $feature) {
+            $features[] = [
+                'key' => $key,
+                'description' => $feature['description'] ?? $key,
+                'limit' => (int) ($feature['limit'] ?? 0),
+            ];
+        }
+
+        $data = [
+            'plan_title' => $planTitle,
+            'plan_type' => $planType,
+            'has_active_plan' => $hasActivePlan,
+            'ends_at' => $endsAt,
+            'features' => $features,
+        ];
+
+        return $this->processResponse(1, [], $data);
+    }
+
+    /**
+     * Mobile App API: Get available subscription plans
+     *
+     * @return json
+     */
+    public function appApiSubscriptionPlans()
+    {
+        validateVendorAccess('administrative');
+        $paidPlans = getPaidPlans();
+
+        $plans = [];
+        foreach ($paidPlans as $planId => $plan) {
+            if (empty($plan['enabled'])) {
+                continue;
+            }
+            $plans[$planId] = [
+                'title' => $plan['title'] ?? $planId,
+                'charges' => $plan['charges'] ?? [],
+            ];
+        }
+
+        return $this->processResponse(1, [], [
+            'plans' => $plans,
+        ]);
+    }
+
     public function subscriptionList()
     {
         return $this->subscriptionEngine->prepareSubscriptionDataTableList();

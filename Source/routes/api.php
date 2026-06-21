@@ -14,6 +14,7 @@ use App\Yantrana\Components\{
 };
 use App\Yantrana\Components\BotReply\Controllers\BotReplyController;
 use App\Yantrana\Components\Campaign\Controllers\CampaignController;
+use App\Yantrana\Components\Subscription\Controllers\SubscriptionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -395,6 +396,16 @@ Route::group([
             WhatsAppServiceController::class,
             'appApiScheduleCampaign',
         ])->name('app_api.vendor.campaign.write.schedule');
+        // Subscription info for mobile app
+        Route::get('/subscription-info', [
+            SubscriptionController::class,
+            'appApiSubscriptionInfo',
+        ])->name('app_api.vendor.subscription.read.info');
+        // Available subscription plans for mobile app
+        Route::get('/subscription-plans', [
+            SubscriptionController::class,
+            'appApiSubscriptionPlans',
+        ])->name('app_api.vendor.subscription.read.plans');
     });
 
     // logout
